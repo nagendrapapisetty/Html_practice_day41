@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Flexbox Example</title>
+    <style>
+        body {
+            text-align: center;
+            padding-top: 10px;
+          
+            background: rgba(189, 198, 199, 0.952);
+            margin: 0px;
+        }
+        .menu {
+           
+            margin-top: 50px;
+            margin-right: 50px;
+            margin-left: 50px;
+            background:rgb(218, 112, 207);
+            overflow:auto;
+        
+
+        }
+        .menu ul{
+            margin:none;
+            padding: none;
+            list-style: none;
+            line-height: 60px;
+        }
+        .menu li{
+            float: left;
+        }
+        .menu ul li a{
+           
+            text-decoration: none;
+            width: 130px;
+            margin-top: 0px;
+            display: block;
+            color: black;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 0.5px;
+        }
+        .menu li a:hover {
+            color: rgb(255, 255, 255);
+            opacity: 0.5;
+            font-size: 15px;
+
+        }
+        .search-form {
+            margin-top:5px;
+            float: right;
+            margin-right: 50px;
+            margin-bottom: 10px;
+        
+        }
+        input[type=text]{
+            padding: 3px;
+            font-size: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        button{
+            float: right;
+            background: black;
+            color: tan;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+            position: relative;
+            padding: 5px;
+            margin-top: 20px;
+            margin-left: 5px;
+
+            font-family: Arial, Helvetica, sans-serif;
+            border: none;
+            font-size: 12px;
+
+        }
+
+      
+		 
+        
+		 .footerContainer { 
+			 display: flex;
+			 flex-flow: column wrap;
+			 align-content: center;
+			 background: white;
+			 font-weight: bold;
+			 padding: 10px;
+			 margin-left: 50px;
+			 margin-right: 50px;
+			 margin-bottom: 100px;
+		 }
+
+		 .mainContainer {
+			 display: flex;
+			 flex-flow: row wrap;
+			 align-content: center;
+			 font-weight: italic;
+			 margin-right: 50px;
+			 margin-left: 50px;
+		 }
+
+		 .mainContentItem {
+       text-align: left;
+			 
+		 }
+
+		 article {
+			 padding: 10px;
+			 margin:10px;
+			 background: white;
+             
+		 }
+
+		 
+
+		  .sideBarRightItem {
+			 text-align: center;
+			 margin-top: 10px;
+			 margin-bottom: 10px;
+             background:rgb(218, 112, 207);
+		 } 
+
+		 .sideBarItem {
+			 flex: 1 0 0;
+			 border: 0px solid rgb(0, 4, 128);
+		 }
+
+		 .mainContentItem {
+			 flex: 4 0px;
+		 }
+        
+
+		 
+     .mainContentItem { order: 2; }
+		  .sideBarRightItem { 
+            order: 3;
+            text-align:left;
+            
+
+         } 
+         
+
+    </style>
+	</head>
+    <body>
+        <h1>Header</h1>
+        <nav class = "menu">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">OURTEAM</a></li>
+                <li><a href="#">PROJECTS</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <form class ="search-form">
+                    <input type = "text"placeholder ="search">
+                    <button> search </button>
+
+                </form>
+
+            </ul>
+            
+        </nav>
+        
+ <div class="mainContainer">
+    <section class="mainContentItem">
+    <article>
+        <h2>First Section</h2>
+        <p>"As with most essays, the three-paragraph essay has three parts: an introduction, a body, and a conclusion. Yet with this type of essay–unlike its five-paragraph counterpart–each one of these sections has only one paragraph. The three-paragraph essay, therefore, might be ideal for young writers or those who are currently mastering the English language.” </p>
+ 
+   
+        <h2>Second Section</h2>
+        <p>Another benefit to the three-paragraph essay could be that it requires you to condense your supporting points into just one, which can be a good exercise. If you had to choose only one point to convince a reader to agree with you, what would it be? </p>
+    
+ 
+        <h2>Third Section</h2>
+        <p>After performing some light prewriting, such as brainstorming or writing an outline, students can move right into composing the essay. While this process is similar across the board for writing academic papers, the three-paragraph essay is unique in that the body will take up less space in the finished product. </p>
+        
+    </article>
+ 
+  </section>
+    
+    <!-- <sideBar class="sideBarItem sideBarRightItem"><div class="center"><p>Right Side Bar</p></div></sideBar>	 -->
+    <sideBar class="sideBarItem sideBarRightItem"><div class="center">
+        
+        <h1>reader</h1>
+        <ul type="disc">
+        <li><u>oh i do like to be beside the seaside</u></li>
+        <li><u>oh i do like to be beside the sea</u></li>
+        <li><u>Aithough in the North of England</u></li>
+        <li><u>it never stops raining</u></li>
+        <li><u>oh well...</u></li>
+        
+    </ul>
+        
+    </div>
+     </sideBar>
+    </div>
+ 
+    <footer class="footerContainer"><strong>End Of the Article</strong></footer>
+    </body>
+</html>
+		
